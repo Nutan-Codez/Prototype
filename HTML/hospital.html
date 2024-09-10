@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Info</title>
+    <link rel="stylesheet" href="/CSS/hospital.css">
+</head>
+<body>
+    <!-- <nav>
+        <div class="logo">
+            <h2>City Care Hospital</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> -->
+
+    <header>
+        <div class="navbar">
+            <div class="logo">HealthCareInfo</div>
+
+            <nav>
+                <ul>
+                    <li><a href="/HTML/index.html">Home</a></li>
+                    <li><a href="#">Hospitals</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <header class="header2">
+        <h1>City Care Hospital</h1>
+        <!-- <p>Providing compassionate care for our community</p> -->
+    </header>
+
+    <section class="availability-section">
+        <div class="info-card beds-card">
+            <h2>Beds Availability</h2>
+            <p id="bed-info">Loading...</p>
+        </div>
+    
+        <div class="info-card doctors-card">
+            <h2>Doctors Availability</h2>
+            <label for="doctor-select">Select a Department:</label>
+            <select id="doctor-select" onchange="showDoctorInfo()">
+                <option value="">--Choose--</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="pediatrics">Pediatrics</option>
+            </select>
+            <div id="doctor-info"></div>
+    
+            <button class="appointment-btn" onclick="window.location.href='appointment.html'">Book an Appointment</button>
+        </div>
+    
+        <div class="info-card stock-card">
+            <h2>Medical Stock Availability</h2>
+            <ul id="stock-info">
+                <li>Paracetamol: 200 units</li>
+                <li>Syringes: 500 units</li>
+                <li>Bandages: 350 units</li>
+                <li>Antibiotics: 100 units</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contact Us</h3>
+                <p>Phone: +91-1234567890</p>
+                <p>Email: info@citycarehospital.com</p>
+                <p>Address: 123, Main Street, Your City, Country</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-buttons">
+                <button onclick="window.location.href='appointment.html'">Book an Appointment</button>
+                <button onclick="window.location.href='#'">Contact Us</button>
+            </div>
+        </div>
+        <p>&copy; 2024 City Care Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/JS/hospital.js"></script>
+</body>
+</html>

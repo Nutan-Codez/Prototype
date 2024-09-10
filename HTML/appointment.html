@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+header {
+    background-color: #363636;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/* Navbar */
+nav {
+    background-color: rgb(144, 243, 247);
+    color: #363636;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h2 {
+    margin-left: 20px;
+    font-size: 1.8em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Appointment Form Styling */
+.appointment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.appointment-form-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 60%;
+    max-width: 600px;
+}
+
+#appointment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    background-color: #363636;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1a1a1a;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(144, 243, 247);
+    color: #363636;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .appointment-form-container {
+        width: 90%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>City Care Hospital</h2>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Book an Appointment</h1>
+        <p>Fill in the form below to schedule your appointment</p>
+    </header>
+
+    <section class="appointment-section">
+        <div class="appointment-form-container">
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Select Department</label>
+                    <select id="department" name="department" required>
+                        <option value="">-- Choose Department --</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Appointment Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Notes</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any special requests?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 City Care Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Navbar Links Styles */
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on Navbar Links */
+.navbar nav ul li a:hover {
+    background-color: #00bcd4; /* Cyan color on hover */
+}
+
+/* Login Button Styles */
+.login a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #555; /* Darker background color for login */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on Login Button */
+.login a:hover {
+    background-color: #00bcd4; /* Cyan color on hover */
+}
+
+/* nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h2 {
+    margin-left: 20px;
+    font-size: 1.8em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: #f2ff00;
+} */
+
+/* Header */
+.header2 {
+    background-color: white;
+    color: #00bcd4;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/* Availability Section */
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* Centering the Availability Section */
+.availability-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px; /* Gap between the cards */
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+/* Card Styles */
+.info-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    background-color: #ffcccc;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.beds-card {
+    background-color: #ffe0e0;
+    border: 1px solid #fa9292;
+}
+
+.doctors-card {
+    background-color: #bdf1ff;
+    border: 1px solid #59dbff;
+}
+.doctors-card:hover {
+    background-color: #9feaff;
+    border: 2px solid #59dbff;
+    transition: 0.5s;
+}
+
+.stock-card {
+    /* background-color: #e0ffff; */
+    background-color: #ffe0e0;
+    border: 1px solid #fa9292;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Drop-down and Lists */
+#doctor-select {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Button Styles */
+.appointment-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #218838;
+}
+
+
+
+
+/* Appointment Button
+.appointment-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #218838;
+} */
+
+/* Footer */
+footer {
+    background-color: #004085;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-info, .footer-social {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    margin: 10px 0;
+}
+
+.footer-social ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .availability-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .availability-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
